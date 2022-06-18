@@ -24,6 +24,7 @@ function init() {
     prompt (questions).then(ans => {
         //If Employee is true
         if (ans.isEmployee) {
+            //If Employee Role is Mangager or Engineer or either Intern push to Employee array
             if (ans.role === "Manager"){
                 employees.Manager.push(new Manager(ans.name, ans.id, ans.email, ans.officeNumber));
             };
