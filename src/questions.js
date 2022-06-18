@@ -2,13 +2,14 @@ const questions =     [
     {
         type: 'confirm',
         name: 'isEmployee',
-        message: 'Would you like to add and employee?'
+        message: 'Would you like to add an employee?'
     },
     {
         type: 'list',
         name: 'role',
         message: 'Which position would you like to fill?',
         choices: ['Manager','Engineer','Intern'],
+        //When isEmployee is tr
         when: ({ isEmployee }) => isEmployee
     },
     {

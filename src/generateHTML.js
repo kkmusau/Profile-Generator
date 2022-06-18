@@ -1,6 +1,6 @@
 const { writeFile } = require('fs');
 
-
+// Function to generate HTML markup from index.html
 function generateHTML(employees) {
     let output = `
     <!DOCTYPE html>
