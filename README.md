@@ -9,8 +9,10 @@ node index.js
 ```
 
 ## Usage
+A Webpage that displays a team's basic information with quick access to emails and GitHub profiles.
 
 ## Screenshot
+![Team Profile](https://user-images.githubusercontent.com/101844445/174508297-30e516df-5bcf-4fc2-85b7-e4178c5b6efa.png)
 
   ## Questions
   Find me on Github: [kkmusau](https://github.com/kkmusau)

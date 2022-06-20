@@ -31,24 +31,24 @@ function generateHTML(employees) {
     `
 
 
-    employees.Manager.forEach(mgr => {
-        `  <div class="team-area col-12 d-flex justify-content-center">
-        <div class="card employee-card">
-            <div class="card-header">
-                <h2 class="card-title">${ans.name}</h2>
-                <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${ans.role}</h3>
-            </div>
-            <div class="card-body">
-                <ul class="list-group">
-                    <li class="list-group-item">ID: ${ans.id}</li>
-                    <li class="list-group-item">Email: ${ans.email}<a
-                            href="mailto:jared@fakemail.com">jared@fakemail.com</a></li>
-                    <li class="list-group-item">Office number: 1</li>
-                </ul>
-            </div>
-        </div>`
+    // employees.Manager.forEach(mgr => {
+    //     `  <div class="team-area col-12 d-flex justify-content-center">
+    //     <div class="card employee-card">
+    //         <div class="card-header">
+    //             <h2 class="card-title">${ans.name}</h2>
+    //             <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${ans.role}</h3>
+    //         </div>
+    //         <div class="card-body">
+    //             <ul class="list-group">
+    //                 <li class="list-group-item">ID: ${ans.id}</li>
+    //                 <li class="list-group-item">Email: ${ans.email}<a
+    //                         href="mailto:jared@fakemail.com">jared@fakemail.com</a></li>
+    //                 <li class="list-group-item">Office number: 1</li>
+    //             </ul>
+    //         </div>
+    //     </div>`
 
-});
+// });
 }
 
 // export to index
