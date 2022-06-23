@@ -1,7 +1,8 @@
 const { writeFile } = require('fs');
 
 // Function to generate HTML markup from index.html
-function generateHTML(employees) {
+function generateHTML({ Manager, Engineer, Intern }) {
+
     let output = `
     <!DOCTYPE html>
     <html lang="en">
@@ -26,30 +27,82 @@ function generateHTML(employees) {
         </div>
     </div>
     <div class="container">
-        <div class="row">
-        ${employees}
     `
 
+    if(Manager.length) {
+        output += '<div class="row">'
 
-    // employees.Manager.forEach(mgr => {
-    //     `  <div class="team-area col-12 d-flex justify-content-center">
-    //     <div class="card employee-card">
-    //         <div class="card-header">
-    //             <h2 class="card-title">${ans.name}</h2>
-    //             <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>${ans.role}</h3>
-    //         </div>
-    //         <div class="card-body">
-    //             <ul class="list-group">
-    //                 <li class="list-group-item">ID: ${ans.id}</li>
-    //                 <li class="list-group-item">Email: ${ans.email}<a
-    //                         href="mailto:jared@fakemail.com">jared@fakemail.com</a></li>
-    //                 <li class="list-group-item">Office number: 1</li>
-    //             </ul>
-    //         </div>
-    //     </div>`
+        Manager.forEach(mgr => {
+            output += `
+                <div class="card employee-card">
+                    <div class="card-header">
+                        <h2 class="card-title">${mgr.name}</h2>
+                        <h3 class="card-title"><i class="fas fa-mug-hot mr-2"></i>Manager</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">ID: ${mgr.id}</li>
+                            <li class="list-group-item">Email: ${mgr.email}</li>
+                            <li class="list-group-item">Office number: ${mgr.officeNumber}</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        });
 
-// });
+        output += '</div><hr>';
+    };
+
+    if(Engineer.length) {
+        output += '<div class="row">'
+
+        Engineer.forEach(Eng => {
+            output += `
+                <div class="card employee-card">
+                    <div class="card-header">
+                        <h2 class="card-title">${Eng.name}</h2>
+                        <h3 class="card-title"><i class="fas fa-glasses mr-2"></i>Engineer</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">ID: ${Eng.id}</li>
+                            <li class="list-group-item">Email: ${Eng.email}</li>
+                            <li class="list-group-item">GitHub: ${Eng.github}</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        });
+        output += '</div><hr>';
+    };
+
+    if(Intern.length) {
+        output += '<div class="row">'
+
+        Intern.forEach(Int => {
+            output += `
+                <div class="card employee-card">
+                    <div class="card-header">
+                        <h2 class="card-title">${Int.name}</h2>
+                        <h3 class="card-title"><i class="fas fa-user-graduate mr-2"></i>Intern</h3>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">ID: ${Int.id}</li>
+                            <li class="list-group-item">Email: ${Int.email}</li>
+                            <li class="list-group-item">School: ${Int.school}</li>
+                        </ul>
+                    </div>
+                </div>
+            `
+        });
+        output += '</div><hr></div>';
+    };
+
+    writeFile("./index.html", output, err => {if (err) throw err});
 }
+
+
 
 // export to index
 module.exports = generateHTML; 
