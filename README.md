@@ -12,20 +12,12 @@ node index.js
 A Webpage that displays a team's basic information with quick access to emails and GitHub profiles.
 
 ## Video and Screenshot
-[![Watch the video]("https://cdn.loom.com/sessions/thumbnails/f9d60171d8634735aec4e4cb8b67fa30-with-play.gif)](https://www.loom.com/share/f9d60171d8634735aec4e4cb8b67fa30)
+![Team-Profil_Gen](https://user-images.githubusercontent.com/101844445/176092355-17096088-d2b0-41f5-9282-8ba2d0105550.gif)](https://www.loom.com/share/f9d60171d8634735aec4e4cb8b67fa30)
 ![Team Profile](https://user-images.githubusercontent.com/101844445/176091295-a20fc1a0-3d37-4b34-bb93-99c51132cdd5.png)
+
 
   ## Questions
   Find me on Github: [kkmusau](https://github.com/kkmusau)
   </br>
   Email me any questions at: kkmusau@gmail.com
  </br>
-
-
-
-
-
-<a href="https://www.loom.com/share/f9d60171d8634735aec4e4cb8b67fa30">
-    <p>Visual Studio Code - generateHTML.js - Program-profile-Generator - Visual Studio Code - 27 June 2022 - Watch Video</p>
-    <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/f9d60171d8634735aec4e4cb8b67fa30-with-play.gif">
-  </a>
